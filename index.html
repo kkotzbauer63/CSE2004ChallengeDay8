@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+  <span>Site Title</span>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Left Column</h1>
+    <p>Left column content...</p>
+  </section>
+
+  <aside>
+    <h2>Right Column</h2>
+    <p>Right column content...</p>
+  </aside>
+</main>
+
+<footer>
+  <p>Footer content...</p>
+</footer>
+</body>
+</html>
+<style>
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+  color: #334155;
+  background-color: #add4fc;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Header: Using flexbox for alignment */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9% 1% 0.9% 0.2%;
+  margin-bottom: 1rem;
+  border-bottom: 0.3rem solid #197db7;
+  border-radius: 5%;
+  height: 1.5rem;
+  
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+header nav a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #1d3741; 
+}
+
+/* Main Layout: Side-by-side using percentages and flex */
+main {
+  display: flex;
+  gap: 1.1rem; /* Space between columns using percentage */
+  margin-bottom: 1.1rem;
+  align-items: stretch;
+}
+
+section, aside {
+  justify-content: flex-start;
+  background: white;
+  padding: 4% 1.5rem 2% 0.88rem;
+  border-radius: 0.75rem;
+  
+  box-shadow: 0 0.2rem 0.3rem -0.05rem rgba(0, 0, 0, 0.1);
+  height: 12rem;
+  display: flex;
+  flex-direction: column; 
+}
+
+section {
+  flex-grow: 0.8;
+}
+
+aside {
+  width: 9rem;
+  flex-grow: 0.2;
+}
+
+h1, h2 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0; 
+  line-height: 1;
+}
+
+p{
+  font-size: 1rem;
+}
+
+/* Footer: Full width and centered */
+footer {
+  padding:0.1rem 1rem;
+  text-align: left;
+  background: #197db7;
+  color: #f8fafc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.3rem -0.05rem rgba(0, 0, 0, 0.1);
+}
+  </style>
